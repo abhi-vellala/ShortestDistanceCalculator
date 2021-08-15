@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+body {
+  background: #333;
+  font-family: Titillium Web, Arial;
+  color: #333;
+}
+
+header {
+  transition: ease-in-out .55s;
+}
+
+
+.title-content {
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  left: 100px;
+  right: 100px;
+  z-index: 8;
+  color: #d1d1d1;
+  text-align: center;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: Titillium Web, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: Titillium Web, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+p{
+  font-family: Titillium Web, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+hr {
+  border: none;
+  display: block;
+  background-color: seagreen;
+  border-top: 0;
+  width: 64px;
+  height: 4px;
+  margin: 10px auto 20px;
+}
+
+.title-content p {
+  line-height: 22px;
+  margin: 0 300px 300px;
+}
+
+.title-content a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: inline-block;
+  background: seagreen;
+  color: #fff;
+  padding: 10px 10px 0px 10px;
+  height: 50px;
+}
+
+
+
+
+/* My addition */
+
+.display-bottom{
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  right: 100px;
+  text-align: center;
+  z-index: 100;
+}
+
+
+.split {
+  height: 30%;
+  width: 50%;
+  position: fixed;
+  z-index: 100;
+  top: 35%;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 5%;
+  left: 35%;
+}
+
+
+.para {
+    line-height: 32px;
+    position: absolute;
+    margin: 10% 10% 0 5%;
+    font-size: 20px;
+    z-index: 100;
+    left: 25%;
+}
+
+.options {
+  position: relative;
+  top: 65%;
+  z-index: 100;
+
+}
+
+.btn {
+    border: 1px solid #fff;
+    font-family: Titillium Web, Arial;
+    background-color: transparent;
+    height: 50px;
+    width: 150px;
+    color: #fff;
+    font-size: 1.5em;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+.btn:hover {
+    background-color: #3e8e41
+}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.myimg {
+    position: relative;
+    left: 35px;
+
+}
+

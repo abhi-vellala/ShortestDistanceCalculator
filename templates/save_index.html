@@ -1,0 +1,157 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Shortest Distance - Travelling Salesman Problem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="{% static 'styles/style.css' %}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+<!--  <header>-->
+<!--    <a class="banner-image"></a>-->
+<!--    <nav class="primary-menu">-->
+<!--      <ul>-->
+<!--        <li><a href="#">Home</a></li>-->
+<!--        <li><a href="#">About</a></li>-->
+<!--        <li><a href="#">Services</a></li>-->
+<!--        <li><a href="#">Work</a></li>-->
+<!--        <li><a href="#">News</a></li>-->
+<!--        <li><a href="#">Contact</a></li>-->
+<!--      </ul>-->
+<!--    </nav>-->
+<!--  </header>-->
+<!--  <section class="home-upper">-->
+
+    <div class="title-content">
+      <h2>Shortest Distance Calculator</h2>
+      <hr style="width:50%">
+      <p>This demo uses Travelling Salesman Problem approach to calculate the shortest distance between all nodes.
+        Travelling Salesman Problem is one of the most popular ways of determining the shortest path between given points. This is extensively used in Computer Science research
+      in optimizing a process or a program to reduce computation complexity and achieve more control.
+      More information can be found in  <a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Wikipedia page</a></p>
+    </div>
+
+  <div class="split left">
+    <div class="centered">
+       <h4>Setup and Instructions</h4>
+      <hr style="width:80%">
+    </div>
+    <div class="para">
+    <p>The Interface has a setup of 4 nodes 1,2,3,4 and the distance between 1 and 2 is 10 , 1 and 3 is 15, 1 and 4 is 20, 2 and 3 is 35,
+      2 and 4 is 25, 3 and 4 is 30. The image in the right shows the setup.
+    </p>
+      <br>
+      <p style="font-weight:bold;">Current Shortest Distance is {{min_dist}} </p>
+      <br>
+      <p style="font-weight:bold;">Shortest path is: </p>
+      {% if not length %}
+      <p>{{fastest_route}}</p>
+      {% else %}
+      {% for route in fastest_route %}
+      <p>{{route}}</p>
+      {% endfor %}
+      {% endif %}
+    </div>
+    <div class="options">
+      <div class="centered">
+        <h4>Choose your options</h4>
+        <hr style="width:80%">
+      </div>
+      <div class="para">
+        <p> Choose your operation to update the nodes and recalculate the shortest distance</p>
+        <br>
+          <button class="btn" onclick="location.href='http://spacy.io'" >Add Node</button> &nbsp; &nbsp; &nbsp;
+          <button class="btn" onclick="location.href='http://youtube.com'" >Delete Node</button>
+          </div>
+          </div>
+
+    </div>
+  </div>
+
+<div class="split right">
+    <img src="{{baseUrl}}/{{graphimg}}" width="500" height="600" class="myimg">
+</div>
+
+<!--    <div class="cta_video_container">-->
+<!--      <video class="cta_video" src="http://stevenlutzstudios.com/wp-content/themes/steven-lutz-studios/videos/typing.mp4" autoplay loop>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--  <section class="learn-more">-->
+<!--    <h3>Duis sagittis ipsum. Praesent mauris.</h3>-->
+<!--    <a class="our-stats">Class aptent taciti</a>-->
+<!--  </section>-->
+<!--  <section class="the-stats">-->
+<!--    <div class="stat-container">-->
+<!--      <div class="stat stat-1">-->
+<!--        <div>-->
+<!--          <span class="number">1234</span>-->
+<!--          <br>-->
+<!--          <span class="text">Successful<br>Projects</span>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="stat stat-2">-->
+<!--        <div>-->
+<!--          <span class="number">1234</span>-->
+<!--          <br>-->
+<!--          <span class="text">Lines of<br>Code</span>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="stat stat-3">-->
+<!--        <div>-->
+<!--          <span class="number">1234</span>-->
+<!--          <br>-->
+<!--          <span class="text">Cups of<br>Coffee</span>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="stat stat-4">-->
+<!--        <div>-->
+<!--          <span class="number">123</span>-->
+<!--          <br>-->
+<!--          <span class="text">Locations<br>Wordlwide</span>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+
+<!--  <section class="more-impressive-info">-->
+<!--    <h2>Lorem Ipsum</h2>-->
+<!--    <hr>-->
+<!--    <h4>Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper</h4>-->
+<!--    <a href="#">Taciti Sociosqu Ad</a>-->
+<!--  </section>-->
+<!--  <section class="our-info">-->
+<!--    <ul>-->
+<!--      <li>-->
+<!--        <img src="https://images.unsplash.com/photo-1421977870504-378093748ae6?fit=crop&fm=jpg&h=700&q=80&w=1050">-->
+<!--        <h3>Lorem Ipsum</h3>-->
+<!--        <span>Sed cursus ante dapibus diam. Sed nisi.</span>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <img src="https://ununsplash.imgix.net/uploads/1412825195419af52b492/8bc72ed7?fit=crop&fm=jpg&h=700&q=75&w=1050">-->
+<!--        <h3>Lorem Ipsum</h3>-->
+<!--        <span>Sed cursus ante dapibus diam. Sed nisi.</span>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <img src="https://images.unsplash.com/45/eDLHCtzRR0yfFtU0BQar_sylwiabartyzel_themap.jpg?fit=crop&fm=jpg&h=700&q=80&w=1050">-->
+<!--        <h3>Lorem Ipsum</h3>-->
+<!--        <span>Sed cursus ante dapibus diam. Sed nisi.</span>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </section>-->
+  <div id="footer"><center>Created and Developed by Abhinay Krishna Vellala</center></div>
+<!--  <footer>-->
+
+<!--    <p>Copyright 2015</p>-->
+<!--footer p{margin-left:100px; margin-top: -370px;}-->
+<!--  </footer>-->
+</main>
+
+
+</body>
+</html>

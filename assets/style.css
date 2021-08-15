@@ -1,0 +1,386 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+body {
+  background: #333;
+  font-family: Titillium Web, Arial;
+  color: #333;
+}
+
+header {
+  transition: ease-in-out .55s;
+}
+
+.primary-menu {
+  position: absolute;
+  z-index: 10;
+  background: transparent;
+  padding: 20px 0px;
+  width: 100%;
+  transition: ease-in-out .55s;
+  text-align: right;
+}
+
+.scrolled {
+  -webkit-box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.61);
+  background: coral;
+}
+
+.primary-menu ul {
+  padding-right: 50px;
+  padding-top: 25px;
+}
+
+.primary-menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.primary-menu ul li a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: ease .25s;
+  padding: 0px 3px;
+}
+
+.primary-menu ul li a:hover {
+  background: seagreen;
+  padding: 5px 3px;
+  border-bottom: solid 2px #fff;
+}
+
+.cta_video {
+  width: 100%;
+  display: block;
+  height: auto;
+  top: -50px;
+  min-height: 550px;
+  max-height: 950px;
+  -webkit-filter: brightness(.65);
+  filter: brightness(.65);
+}
+
+.cta_video_container {
+  position: relative;
+  display: block;
+  height: 500px;
+}
+
+.title-content {
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  left: 5%;
+  right: 5%;
+  z-index: 8;
+  color: #d1d1d1;
+  text-align: center;
+  font-size: 16px;
+}
+
+.title-content h2 {
+  font-family: Titillium Web, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.title-content hr {
+  border: none;
+  display: block;
+  background-color: seagreen;
+  border-top: 0;
+  width: 64px;
+  height: 4px;
+  margin: 10px auto 20px;
+}
+
+.title-content p {
+  margin: 0 25% 30px;
+}
+
+.title-content a {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  transition: ease .4s;
+}
+
+.title-content a:hover {
+  background: seagreen;
+  padding: 10px 5px;
+}
+
+.banner-image {
+  position: absolute;
+  left: 0;
+  top: 14px;
+  margin-left: 0!important;
+  padding: 0;
+  z-index: 20;
+  background: url('http://media.cargocollective.com/1/14/474825/headerimg/logo_lorem.jpg') no-repeat center center;
+  background-size: cover;
+  width: 177px;
+  height: 74px;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.learn-more {
+  position: relative;
+  left: 0;
+  right: 0;
+  min-height: 300px;
+  background: #F7F6F6;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  border-bottom: solid 2px seagreen;
+  border-top: solid 2px seagreen;
+}
+
+.learn-more h3 {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-size: 40px;
+}
+
+.learn-more a {
+  text-transform: uppercase;
+  color: seagreen;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.stat-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.stat .number {
+  display: block;
+  margin-top: 50px;
+  font-size: 58px;
+  color: #fff;
+}
+
+.stat .text {
+  display: block;
+  margin-top: 20px;
+  font-size: 28px;
+  color: seagreen;
+}
+
+.stat:hover div {
+  background: rgba(255, 255, 255, 0.65);
+  padding-bottom: 60px;
+  padding-top: 1px;
+  margin-top: 40px;
+  transition: ease-in-out .3s;
+}
+
+.stat:hover .number {
+  color: #333;
+}
+
+.stat {
+  width: 25%;
+  padding: 1em;
+  color: #fff;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  font-weight: 300;
+  background: url("https://unsplash.imgix.net/photo-1425315283416-2acc50323ee6?fit=crop&fm=jpg&h=700&q=75&w=1050")no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  min-height: 300px;
+  -webkit-filter: grayscale(.85) brightness(.75);
+  filter: grayscale(.85) brightness(.75);
+  transition: ease-in-out .25s;
+}
+
+.stat:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transition: ease-in-out .25s;
+  -webkit-filter: grayscale(.15) brightness(.95);
+  filter: grayscale(.15) brightness(.95);
+}
+
+.the-stats {
+  overflow: hidden;
+}
+
+.stat-1 {
+  background: url('https://ununsplash.imgix.net/photo-1421757295538-9c80958e75b0?fit=crop&fm=jpg&h=700&q=75&w=1050') no-repeat center center;
+  background-size: cover;
+}
+
+.stat-2 {
+  background: url('https://unsplash.imgix.net/uploads/14120938606568dde6e2b/c9e42240?fit=crop&fm=jpg&h=700&q=75&w=1050') no-repeat center center;
+  background-size: cover;
+}
+
+.stat-3 {
+  background: url('https://ununsplash.imgix.net/photo-1416339426675-1f96fd81b653?fit=crop&fm=jpg&h=800&q=75&w=1050') no-repeat center center;
+  background-size: cover;
+}
+
+.stat-4 {
+  background: url('https://ununsplash.imgix.net/reserve/wi9yf7kTQxCNeY72cCY6_Images%20of%20Jenny%20Lace%20Plasticity%20Publish%20(4%20of%2025).jpg?fit=crop&fm=jpg&h=725&q=75&w=1050') no-repeat center center;
+  background-size: cover;
+}
+
+.more-impressive-info {
+  display: inline-block;
+  width: 100%;
+  background: #222;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.more-impressive-info h2 {
+  color: #fff;
+  font-size: 32px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.more-impressive-info hr {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 950px;
+}
+
+.more-impressive-info h4 {
+  color: #fff;
+  font-size: 22px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.more-impressive-info a {
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 20px;
+  display: inline-block;
+  background: seagreen;
+  color: #000;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: ease .25s;
+  border: solid 1px #fff;
+}
+
+.more-impressive-info a:hover {
+  background: #fff;
+  color: seagreen;
+  border: solid 1px lightseagreen;
+  text-decoration: none;
+}
+
+.our-info {
+  width: 100%;
+  display: inline-block;
+  background: #f0f0f0;
+  text-align: center;
+  padding:20px 0px;
+}
+
+.our-info ul li {
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+.our-info ul li img {
+  height: 260px;
+    width: 260px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+  border:solid 5px transparent;
+  border-radius:150px;
+   -webkit-filter:brightness(.35);
+  filter:brightness(.35);
+    -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.our-info ul li img:hover {
+width:260px;
+  -webkit-filter:brightness(1);
+  filter:brightness(1);
+  border-radius:0px;
+  border:solid 5px seagreen;
+}
+
+.our-info h3{font-size:22px; padding:10px 0px; color:teal;}
+
+.our-info span{text-transform:capitalize;}
+
+footer {
+  width: 100%;
+  display: inline-block;
+  background: seagreen;
+  color: #fff;
+  padding: 40px 0px;
+}
+
+footer p{margin-left:100px;}
+
+@media (max-width:1000px) {
+  .cta_video_container {
+    width: 100%;
+    background: url('https://static-videos.pexels.com/images/video-pictures/323/preview-14.jpg')no-repeat center center;
+    background-size: cover;
+    -webkit-filter: brightness(.65);
+    filter: brightness(.65);
+  }
+  .cta_video {
+    display: none;
+  }
+  .title-content {
+    position: absolute;
+    top: 100px;
+  }
+  .title-content h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width:700px) {
+  .primary-menu {
+    display: none;
+  }
+  .stat-container {
+    display: block;
+  }
+  .stat {
+    display: block;
+    width: 100%;
+  }
+  .title-content {
+    top: 120px;
+  }
+  .title-content h2 {
+    font-size: 32px;
+  }
+  .title-content p {
+    width: 85%;
+    margin: 0 auto;
+  }
+}

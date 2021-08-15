@@ -1,0 +1,56 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Shortest Distance - Travelling Salesman Problem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="{% static 'styles/style.css' %}">
+
+</head>
+<body>
+<main>
+
+    <div class="title-content">
+      <h2>Shortest Distance Calculator</h2>
+      <hr style="width:50%">
+      <p>This demo uses Travelling Salesman Problem approach to calculate the shortest distance between all nodes.
+        Travelling Salesman Problem is one of the most popular ways of determining the shortest path between given points. This is extensively used in Computer Science research
+      in optimizing a process or a program to reduce computation complexity and achieve more control.
+      More information can be found in  <a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Wikipedia page</a></p>
+    </div>
+
+  <div class="split left">
+    <div class="centered">
+       <h4>Result</h4>
+      <hr style="width:80%">
+    </div>
+    <div class="para">
+    <p>The nodes in the graph are {{nodes}}
+    </p>
+      <br>
+      <p style="font-weight:bold;">Shortest Distance to go visit all the nodes and return to the starting point is {{min_dist}} </p>
+      <br>
+      <p style="font-weight:bold;">Shortest path to visit all nodes and return to the starting point: </p>
+      {% if not length %}
+      <p>{{fastest_route}}</p>
+      {% else %}
+      {% for route in fastest_route %}
+      <p>{{route}}</p>
+      {% endfor %}
+      {% endif %}
+    </div>
+
+<div class="split right">
+    <img src="{{baseUrl}}/{{graphimg}}" width="300" height="300" class="myimg">
+</div>
+
+  <div id="footer"><center>Created and Developed by Abhinay Krishna Vellala</center></div>
+
+</main>
+
+
+</body>
+</html>
