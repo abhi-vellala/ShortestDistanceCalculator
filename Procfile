@@ -1,1 +1,1 @@
-Web: gunicorn travel_salesman.wsgi
+web: gunicorn travel_salesman.wsgi
